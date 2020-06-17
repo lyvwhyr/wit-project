@@ -1,0 +1,162 @@
+/*
+ * Common/base styles
+ */
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+h1,
+h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*
+ * Reusable Styles
+ */
+
+.lead {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.content {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 48px;
+}
+
+/*
+ * Button
+ */
+
+.button {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    border: 2px solid #333;
+    padding: 8px 40px;
+    background-color: transparent;
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+}
+
+.button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/*
+ * Nav
+ */
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+@media (min-width: 720px) {
+    nav li {
+        display: inline-block;
+    }
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 8px 24px;
+    font-size: 24px;
+}
+
+@media (min-width: 720px) {
+    nav a {
+        font-size: 16px;
+    }
+}
+
+nav a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/*
+ * Hero
+ */
+
+.hero {
+    background-image: url('hero.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/*
+ * Collection
+ */
+
+@media (min-width: 720px) {
+    .collection img {
+        width: 300px;
+        height: 350px;
+        object-fit: cover;
+    }
+}
+
+/*
+ * Our Story
+ */
+
+.ourstory {
+    background-color: #D2DBE0;
+}
+
+.ourstory .copy {
+    text-align: left;
+}
+
+/*
+ * Blog
+ */
+
+.blog {
+    background-image: url('jefferson.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.blog .content {
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+ * Contact
+ */
+
+.contact {
+    background-color: #D2DBE0;
+}
+
+.contact .content {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
